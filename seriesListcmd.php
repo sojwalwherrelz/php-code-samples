@@ -2,7 +2,7 @@
     $seriesList  = array();
     $offset      = 0;
     $maxOffset   = 1;
-    $apikey      = "%APIKEY";
+    $apikey      = "%APIKEY%";
     $json_result = file_get_contents('https://api.cricapi.com/v1/series?apikey='.$apikey.'&offset=0');
     $j = json_decode($json_result);
     if($j->status != "success") {

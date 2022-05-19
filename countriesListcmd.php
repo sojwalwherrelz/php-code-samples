@@ -1,6 +1,6 @@
 <?php
     $countriesList  = array();
-    $apikey      = "da2589ff-76cf-4b11-8654-080868ac896b";
+    $apikey      = "%APIKEY%";
     $json_result = file_get_contents('https://api.cricapi.com/v1/countries?apikey='.$apikey.'&offset=0');
     $countriesdata = json_decode($json_result);
     if($countriesdata->status != "success") {
